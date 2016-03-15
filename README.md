@@ -1,3 +1,6 @@
+Small project to show case the *allowSyntheticDefaultImports* issue with the latest TypeScript compiler version.
+https://github.com/Microsoft/TypeScript/issues/7518
+
 Install the node modules:
 
 `npm install`

@@ -2,7 +2,7 @@
 	"compileOnSave": false,
 	"filesGlob": [
 		"../typings/**/*.*.ts",
-		"**/*.{ts,tsx}"
+		"**/*.{ts}"
 	],
 	"compilerOptions": {
 		"jsx": "preserve",
@@ -16,10 +16,6 @@
 	},
 	"files": [
 		"../typings/browser.d.ts",
-		"App.tsx"
-	],
-	"exclude": [],
-	"atom": {
-		"rewriteTsconfig": true
-	}
+		"App.ts"
+	]
 }
