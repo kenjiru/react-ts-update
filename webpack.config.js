@@ -7,7 +7,11 @@ var src_dir = path.join(__dirname, "/src");
 var config = {
 	context: __dirname,
 	entry: {
-		app: src_dir + '/App.tsx'
+		app: [
+			'webpack-dev-server/client?http://0.0.0.0:8080',
+			'webpack/hot/dev-server',
+			src_dir + '/App.tsx'
+		]
 	},
 	output: {
 		path: path.join(__dirname, '/dist'),
@@ -20,7 +24,7 @@ var config = {
 		loaders: [
 			{
 				test: /\.(tsx|ts)$/,
-				loaders: ['babel-loader', 'ts-loader'],
+				loaders: ['react-hot', 'babel-loader', 'ts-loader'],
 				include: src_dir
 			}
 		]
